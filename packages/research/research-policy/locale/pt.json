@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Política de pesquisa",
+    "description": "Um portão tools/pre-execute que mapeia regras configuradas para permitir, aprovação ou negar, além de uma guarda monótona para limites rígidos de chamadas por turno."
+  }
+}

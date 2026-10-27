@@ -1,0 +1,18 @@
+{
+  "formatVersion": 2,
+  "roots": [
+    {"key":"event:evidence/recorded","kind":"event","event":"evidence/recorded","surface":false,"digest":"9d3493d613bc16b53e1d64659a8df5a3f68e386466bf047706fd737e474646ab"}
+  ],
+  "types": [],
+  "nodes": {
+    "0657d3ca5ac4e7bf": {"kind":"primitive","type":"number"},
+    "4cd48f3e5108bd6e": {"kind":"primitive","type":"string"},
+    "9d3493d613bc16b5": {"kind":"object","properties":[{"name":"data","type":"bf1bcf035db12883","optional":false},{"name":"ignorable","type":"dacf3d5f3e4ff619","optional":true},{"name":"seq","type":"0657d3ca5ac4e7bf","optional":false},{"name":"time","type":"0657d3ca5ac4e7bf","optional":false},{"name":"type","type":"d6d412ca77dbf4d3","optional":false}],"indices":[]},
+    "baf2b5236078511b": {"kind":"object","properties":[{"name":"capturedAt","type":"0657d3ca5ac4e7bf","optional":false},{"name":"id","type":"4cd48f3e5108bd6e","optional":false},{"name":"source","type":"f9bb0e776cf2d378","optional":false}],"indices":[]},
+    "bf1bcf035db12883": {"kind":"object","properties":[{"name":"kind","type":"d6d412ca77dbf4d3","optional":false},{"name":"record","type":"baf2b5236078511b","optional":false},{"name":"version","type":"f88f1b7b6bb733f6","optional":false}],"indices":[]},
+    "d6d412ca77dbf4d3": {"kind":"literal","value":"evidence/recorded"},
+    "dacf3d5f3e4ff619": {"kind":"literal","value":true},
+    "f88f1b7b6bb733f6": {"kind":"literal","value":1},
+    "f9bb0e776cf2d378": {"kind":"object","properties":[{"name":"publishedAt","type":"4cd48f3e5108bd6e","optional":true},{"name":"snippet","type":"4cd48f3e5108bd6e","optional":true},{"name":"summary","type":"4cd48f3e5108bd6e","optional":true},{"name":"title","type":"4cd48f3e5108bd6e","optional":true},{"name":"url","type":"4cd48f3e5108bd6e","optional":false}],"indices":[]}
+  }
+}

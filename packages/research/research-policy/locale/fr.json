@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Politique de recherche",
+    "description": "Une porte tools/pre-execute associant les règles configurées à autoriser, approbation ou refuser, plus une garde monotone pour des plafonds stricts d'appels par tour."
+  }
+}

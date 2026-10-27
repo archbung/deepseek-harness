@@ -1,0 +1,52 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/research/research-evidence/README.md
+/:
+  en: c6456c0e418698b4
+  zh: b4468f0022d11449
+/deepseek-ai-dsh-research-evidence:
+  en: ad4eb2b1c6a6b7b0
+  zh: ce1f878ec863fdf3
+/deepseek-ai-dsh-research-evidence/summary:
+  en: a8bb11fa496d105a
+  zh: 95e1bb9d884d5d82
+/deepseek-ai-dsh-research-evidence/table-of-contents:
+  en: b563e4ec4727d0de
+  zh: c9d2bfe76d64506a
+/deepseek-ai-dsh-research-evidence/use-this-package:
+  en: a7e75840a6bde991
+  zh: 06c1ffbbd6d4c709
+/deepseek-ai-dsh-research-evidence/use-this-package/minimal-composition:
+  en: 1fba7556231d1bfa
+  zh: 57ea645f644d7b62
+/deepseek-ai-dsh-research-evidence/use-this-package/service-api-ctx-researchevidence:
+  en: 908b14cfde08f190
+  zh: 9547fa5ddd3913f1
+/deepseek-ai-dsh-research-evidence/use-this-package/session-event-and-projection:
+  en: 7f959cfa0d1374f0
+  zh: a0b25af787da86a1
+/deepseek-ai-dsh-research-evidence/understand-the-implementation:
+  en: 42b15ac6321706aa
+  zh: 4ed0861911abaf5d
+/deepseek-ai-dsh-research-evidence/understand-the-implementation/design-philosophy:
+  en: 2c66bdfac781bbc6
+  zh: b547e6f329035913
+/deepseek-ai-dsh-research-evidence/understand-the-implementation/source-map:
+  en: b8f011dcb29af037
+  zh: 307635c414ce4b92
+/deepseek-ai-dsh-research-evidence/further-exploration:
+  en: 20bcd7f98fd798b3
+  zh: bf7fef93cf0c2b77
+/deepseek-ai-dsh-research-evidence/model-experience:
+  en: 96720b2612894eea
+  zh: 9c42f32172908ca3
+/deepseek-ai-dsh-research-evidence/model-experience/kv-cache-effect:
+  en: 24f9f056f534126b
+  zh: 39c81ed90c8367dc
+/deepseek-ai-dsh-research-evidence/known-limitations-and-deferred-work:
+  en: bf8f0cce2637dad6
+  zh: ce7c6a6e76af8ce2
+/deepseek-ai-dsh-research-evidence/known-limitations-and-deferred-work/dev-note:
+  en: e67f633dc6fe7773
+  zh: bd8a8936229e035e

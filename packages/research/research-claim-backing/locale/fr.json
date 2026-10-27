@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Étayage des affirmations de recherche",
+    "description": "Un outil report dont les affirmations doivent citer des preuves enregistrées, avec une garde de fin de tour qui maintient le tour ouvert jusqu'à ce que chaque affirmation soit étayée."
+  }
+}

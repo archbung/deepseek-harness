@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Research policy",
+    "description": "A tools/pre-execute gate mapping configured rules to allow, approval, or deny, plus a monotonic guard for hard per-turn call caps."
+  }
+}

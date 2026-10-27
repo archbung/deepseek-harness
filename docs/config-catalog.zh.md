@@ -2733,6 +2733,72 @@ export interface Config {
 ```
 <!-- END GENERATED config-catalog:@deepseek-ai/dsh-repeat-tool-reminder -->
 
+<!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-research-claim-backing -->
+<a id="deepseek-aidsh-research-claim-backing"></a>
+
+## `@deepseek-ai/dsh-research-claim-backing`
+
+- `inject`: `tools` · `agents` · `researchEvidence` · `sessionProjections`
+- `source`: [`packages/research/research-claim-backing/src/index.ts:46`](../packages/research/research-claim-backing/src/index.ts)
+
+```ts config-catalog
+/** Deployment policy for claim-backing enforcement. */
+export interface Config {
+  /**
+   * How many corrective steps the turn-stopping guard steers while unbacked
+   * claims remain in the latest report before letting the turn close. Zero
+   * disables the backstop (the tool still rejects unbacked submissions).
+   */
+  maxRevisions?: number
+}
+```
+<!-- END GENERATED config-catalog:@deepseek-ai/dsh-research-claim-backing -->
+
+<!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-research-policy -->
+<a id="deepseek-aidsh-research-policy"></a>
+
+## `@deepseek-ai/dsh-research-policy`
+
+- `inject`: `tools` · `agents`
+- `source`: [`packages/research/research-policy/src/index.ts:41`](../packages/research/research-policy/src/index.ts)
+
+```ts config-catalog
+/** Deployment research policy. */
+export interface Config {
+  /**
+   * Per-tool permission rules in precedence order. Any tool no rule names is
+   * denied by the secure default. Tool names must be unique.
+   */
+  rules?: PolicyRule[]
+  /**
+   * Hard per-turn call caps enforced by the monotonic guard. A capped tool's
+   * calls beyond `maxPerTurn` within one turn are denied regardless of the
+   * permission rule or any granted approval. Tool names must be unique.
+   */
+  caps?: ToolCallCap[]
+}
+
+/** One operator-defined rule naming a tool and its effect. */
+export interface PolicyRule {
+  /** The model-facing tool name this rule governs. */
+  readonly tool: string
+  /** The effect applied when the tool is called. */
+  readonly effect: PolicyEffect
+}
+
+/** One operator-configured per-turn cap for a tool's call count. */
+export interface ToolCallCap {
+  /** The model-facing tool name the cap limits. */
+  tool: string
+  /** Maximum calls to that tool per turn; a positive integer. */
+  maxPerTurn: number
+}
+
+/** What the policy does with a named tool call. */
+export type PolicyEffect = 'allow' | 'require-approval' | 'deny'
+```
+<!-- END GENERATED config-catalog:@deepseek-ai/dsh-research-policy -->
+
 <!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-sandbox-local -->
 <a id="deepseek-aidsh-sandbox-local"></a>
 
@@ -4792,6 +4858,7 @@ export interface Config {
 | `@deepseek-ai/dsh-message-quotes` | — | [`packages/session/message-quotes/src/index.ts`](../packages/session/message-quotes/src/index.ts) |
 | `@deepseek-ai/dsh-otel` | — | [`packages/telemetry/otel/src/index.ts`](../packages/telemetry/otel/src/index.ts) |
 | `@deepseek-ai/dsh-plugin-recommendations` | `pluginManager` · `agents` · `skills` · `actionCards` | [`packages/experimental/plugin-recommendations/src/index.ts`](../packages/experimental/plugin-recommendations/src/index.ts) |
+| `@deepseek-ai/dsh-research-evidence` | `sessionProjections` | [`packages/research/research-evidence/src/index.ts`](../packages/research/research-evidence/src/index.ts) |
 | `@deepseek-ai/dsh-sandbox-ssh` | `ssh` | [`packages/ssh/sandbox-ssh/src/index.ts`](../packages/ssh/sandbox-ssh/src/index.ts) |
 | `@deepseek-ai/dsh-session` | — | [`packages/core/session/src/index.ts`](../packages/core/session/src/index.ts) |
 | `@deepseek-ai/dsh-session-checkpoint-policy` | `llm` · `sessionPersistence` · `sessions` · `tools` | [`packages/session/session-checkpoint-policy/src/index.ts`](../packages/session/session-checkpoint-policy/src/index.ts) |

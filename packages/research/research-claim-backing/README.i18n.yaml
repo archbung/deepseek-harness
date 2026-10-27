@@ -1,0 +1,58 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/research/research-claim-backing/README.md
+/:
+  en: ce6351833c3ed2d5
+  zh: 1ca6ca66c7820880
+/deepseek-ai-dsh-research-claim-backing:
+  en: b4ba5b2aabed2f92
+  zh: 0dbb93cecd4ddf0f
+/deepseek-ai-dsh-research-claim-backing/summary:
+  en: 350f20d1c732d00d
+  zh: 7e6f50f5801f4b14
+/deepseek-ai-dsh-research-claim-backing/table-of-contents:
+  en: b563e4ec4727d0de
+  zh: c9d2bfe76d64506a
+/deepseek-ai-dsh-research-claim-backing/use-this-package:
+  en: 0dcbc4d071550bec
+  zh: aab8701c3f71028e
+/deepseek-ai-dsh-research-claim-backing/use-this-package/minimal-composition:
+  en: 1fba7556231d1bfa
+  zh: 57ea645f644d7b62
+/deepseek-ai-dsh-research-claim-backing/use-this-package/configuration:
+  en: 5e1bd23694968d57
+  zh: 0f551fbd89f633a9
+/deepseek-ai-dsh-research-claim-backing/understand-the-implementation:
+  en: 42b15ac6321706aa
+  zh: 4ed0861911abaf5d
+/deepseek-ai-dsh-research-claim-backing/understand-the-implementation/design-philosophy:
+  en: e4b7fcfd09822af2
+  zh: 6a6a037f1d8b13ba
+/deepseek-ai-dsh-research-claim-backing/understand-the-implementation/source-map:
+  en: c76f34e316d468c8
+  zh: 36e99256481bb173
+/deepseek-ai-dsh-research-claim-backing/further-exploration:
+  en: fb8086386a82c6cc
+  zh: dfffaf34b841a75f
+/deepseek-ai-dsh-research-claim-backing/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-research-claim-backing/model-experience/the-report-tool:
+  en: af84c996f4f7c78b
+  zh: 6c93a63deceda495
+/deepseek-ai-dsh-research-claim-backing/model-experience/the-report-tool/what-the-model-sees:
+  en: eefbb79276be2f1b
+  zh: 447e1c614e107144
+/deepseek-ai-dsh-research-claim-backing/model-experience/the-report-tool/token-effect:
+  en: b471006c03de3ed4
+  zh: ca8d330e19b1199d
+/deepseek-ai-dsh-research-claim-backing/model-experience/the-report-tool/kv-cache-effect:
+  en: 41d064ecfc270383
+  zh: 8d4d536277b4c8e3
+/deepseek-ai-dsh-research-claim-backing/known-limitations-and-deferred-work:
+  en: 40b09f5e8c78cf15
+  zh: c97037b91c353730
+/deepseek-ai-dsh-research-claim-backing/known-limitations-and-deferred-work/dev-note:
+  en: e67f633dc6fe7773
+  zh: bd8a8936229e035e
