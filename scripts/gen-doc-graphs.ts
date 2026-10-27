@@ -250,6 +250,11 @@ const SERVICE_ROLES: ServiceRole[] = [
     note: 'Authorized Office bytes are converted on the Host using the declared native target engine, or Node WASM when no native target is declared.',
   },
   {
+    key: 'researchEvidence', pkg: 'research-evidence', title: 'Source-linked research evidence',
+    mode: 'core',
+    note: 'Records web citations as durable evidence/recorded events and reports the evidence ids a session knows through its session projection; claim-backing consumers read those ids.',
+  },
+  {
     key: 'attachments',
     pkg: 'attachment',
     title: 'Durable binary attachment storage',

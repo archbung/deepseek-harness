@@ -1,0 +1,19 @@
+{
+  "formatVersion": 2,
+  "roots": [
+    {"key":"event:report/submitted","kind":"event","event":"report/submitted","surface":false,"digest":"2b511c80dfd8592b8387069472c9ccdd8d4bc6f528ec89d7aee36d3942fbe45e"}
+  ],
+  "types": [],
+  "nodes": {
+    "0657d3ca5ac4e7bf": {"kind":"primitive","type":"number"},
+    "2b511c80dfd8592b": {"kind":"object","properties":[{"name":"data","type":"b2a21d998653d33a","optional":false},{"name":"ignorable","type":"dacf3d5f3e4ff619","optional":true},{"name":"seq","type":"0657d3ca5ac4e7bf","optional":false},{"name":"time","type":"0657d3ca5ac4e7bf","optional":false},{"name":"type","type":"4b319bdac3427d45","optional":false}],"indices":[]},
+    "4b319bdac3427d45": {"kind":"literal","value":"report/submitted"},
+    "4cd48f3e5108bd6e": {"kind":"primitive","type":"string"},
+    "93c33d9687613293": {"kind":"array","element":"4cd48f3e5108bd6e"},
+    "9db42668bf36d0e7": {"kind":"array","element":"a2253260cc554c1f"},
+    "a2253260cc554c1f": {"kind":"object","properties":[{"name":"evidenceIds","type":"93c33d9687613293","optional":false},{"name":"id","type":"4cd48f3e5108bd6e","optional":false},{"name":"text","type":"4cd48f3e5108bd6e","optional":false}],"indices":[]},
+    "b2a21d998653d33a": {"kind":"object","properties":[{"name":"claims","type":"9db42668bf36d0e7","optional":false},{"name":"kind","type":"4b319bdac3427d45","optional":false},{"name":"turn","type":"0657d3ca5ac4e7bf","optional":false},{"name":"version","type":"f88f1b7b6bb733f6","optional":false}],"indices":[]},
+    "dacf3d5f3e4ff619": {"kind":"literal","value":true},
+    "f88f1b7b6bb733f6": {"kind":"literal","value":1}
+  }
+}

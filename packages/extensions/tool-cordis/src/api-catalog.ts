@@ -2155,6 +2155,31 @@ export const SERVICE_API: readonly ServiceApiEntry[] = [
     ],
   },
   {
+    key: 'researchEvidence',
+    summary: 'Evidence service (`ctx.researchEvidence`): records source-linked citations as durable session events and reads them back through the retained projection handle.',
+    description: 'Evidence service (`ctx.researchEvidence`): records source-linked citations as durable session events and reads them back through the retained projection handle. The handle keeps folding after unregistration, so reads survive disposal of the global drive.',
+    methods: [
+      {
+        signature: 'record(session: Session, source: WebSearchSource): EvidenceRecord',
+        description: 'Record one source-linked citation as a durable `evidence/recorded` event.',
+        parameters: [{ name: 'session', description: 'the session whose log receives the record.' }, { name: 'source', description: 'the `ctx.web` citation to wrap; `source.url` must be present.' }],
+        returns: 'the committed record, including its freshly minted id.',
+      },
+      {
+        signature: 'records(session: Session): readonly EvidenceRecord[]',
+        description: 'Every evidence record recorded in the session, in commit order.',
+        parameters: [{ name: 'session', description: 'the session whose evidence is read.' }],
+        returns: 'the current records; empty before any capture.',
+      },
+      {
+        signature: 'knownIds(session: Session): ReadonlySet<EvidenceId>',
+        description: 'The set of evidence ids the session has recorded. The claim-backing policy uses it to reject claims citing unknown evidence.',
+        parameters: [{ name: 'session', description: 'the session whose evidence is read.' }],
+        returns: 'a fresh set of known evidence ids.',
+      },
+    ],
+  },
+  {
     key: 'sandbox',
     summary: 'Abstract process-sandbox service.',
     description: 'Abstract process-sandbox service. confine must return enforcing argv or fail closed at wrap or runner-execution time; silent unconfined passthrough is forbidden. Functional probes arbitrate multi-runner chains and may be skipped for a sole candidate, whose own refusal remains the fail-closed end.',
@@ -5775,6 +5800,14 @@ export const TYPE_API: readonly TypeApiEntry[] = [
   {
     name: 'EveryScheduleRecord',
     declaration: 'export interface EveryScheduleRecord {\n    readonly id: ScheduleId;\n    readonly kind: \'every\';\n    readonly title: string;\n    readonly prompt: string;\n    readonly everySeconds: number;\n    readonly scheduledAt: string;\n}',
+  },
+  {
+    name: 'EvidenceId',
+    declaration: 'export type EvidenceId = Branded<\'EvidenceId\'>;',
+  },
+  {
+    name: 'EvidenceRecord',
+    declaration: 'export interface EvidenceRecord {\n    readonly id: EvidenceId;\n    readonly source: WebSearchSource;\n    readonly capturedAt: number;\n}',
   },
   {
     name: 'FeedbackCategory',

@@ -352,6 +352,14 @@ Every package below exports a Cordis plugin that a bundle patch can name in a Lo
 |---|---|---|
 | `@deepseek-ai/dsh-ptc-runtime-node` | yes | Node PTC execution with per-call sandboxed processes or in-memory REPL state |
 
+## research
+
+| Package | Config | Description |
+|---|---|---|
+| `@deepseek-ai/dsh-research-claim-backing` | yes | Source-backing enforcement for the DeepSeek Harness — a report tool whose structured claims must cite known evidence, deterministic citation-integrity validation against ctx.researchEvidence, and an agent/turn-stopping guard that keeps a research turn open until every claim is backed |
+| `@deepseek-ai/dsh-research-evidence` | no | Source-linked research evidence for the DeepSeek Harness — a durable evidence/recorded session event wrapping ctx.web citations, its session projection, and the ctx.researchEvidence domain service that answers which evidence ids are known in a session |
+| `@deepseek-ai/dsh-research-policy` | yes | Research action policy for the DeepSeek Harness — a tools/pre-execute gate that maps configured per-tool rules to allow, approval, or deny, plus a monotonic tools guard for hard per-turn caps that approval cannot override |
+
 ## sandbox
 
 | Package | Config | Description |

@@ -1,0 +1,49 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/research/research-policy/README.md
+/:
+  en: 41dff9ad62ab8306
+  zh: e35f27a0ace457f9
+/deepseek-ai-dsh-research-policy:
+  en: 1176b2fc3abebe60
+  zh: 69c2a0cf0a6e8860
+/deepseek-ai-dsh-research-policy/summary:
+  en: e5c296b7c5f119aa
+  zh: 26f0be2a86df68d9
+/deepseek-ai-dsh-research-policy/table-of-contents:
+  en: b563e4ec4727d0de
+  zh: c9d2bfe76d64506a
+/deepseek-ai-dsh-research-policy/use-this-package:
+  en: fa1866c0e47d8645
+  zh: bc1ee7b49d93d187
+/deepseek-ai-dsh-research-policy/use-this-package/minimal-composition:
+  en: 1fba7556231d1bfa
+  zh: 57ea645f644d7b62
+/deepseek-ai-dsh-research-policy/use-this-package/configuration:
+  en: 181935e434bb95d1
+  zh: a1647add7919d3fd
+/deepseek-ai-dsh-research-policy/understand-the-implementation:
+  en: 42b15ac6321706aa
+  zh: 4ed0861911abaf5d
+/deepseek-ai-dsh-research-policy/understand-the-implementation/design-philosophy:
+  en: 3f1a800059745748
+  zh: db0b4c6f389a0f33
+/deepseek-ai-dsh-research-policy/understand-the-implementation/source-map:
+  en: 7a7a6e58ebd60339
+  zh: 6ec11585dc21160f
+/deepseek-ai-dsh-research-policy/further-exploration:
+  en: c48ab69e8933bde1
+  zh: 7af3bdf12fcd1658
+/deepseek-ai-dsh-research-policy/model-experience:
+  en: aa84f5df757c6283
+  zh: 3cf6e7466c292099
+/deepseek-ai-dsh-research-policy/model-experience/kv-cache-effect:
+  en: 7ae9a3996fcc6229
+  zh: 50456133841d62d3
+/deepseek-ai-dsh-research-policy/known-limitations-and-deferred-work:
+  en: bbb642a7e7a51d34
+  zh: 8de99e5e1297c7ec
+/deepseek-ai-dsh-research-policy/known-limitations-and-deferred-work/dev-note:
+  en: e67f633dc6fe7773
+  zh: bd8a8936229e035e

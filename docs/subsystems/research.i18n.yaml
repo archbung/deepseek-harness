@@ -1,0 +1,13 @@
+# Bilingual-pair consistency record for research.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write docs/subsystems/research.md
+/research:
+  en: 1cecf558a5d2d12e
+  zh: 96dedbac66040742
+/research/ownership:
+  en: 7aef847fdeac2df0
+  zh: b2ca837c907d095a
+/research/evidence-records:
+  en: 4e2f714b8ea67ba5
+  zh: 0b55c9dda88f2574

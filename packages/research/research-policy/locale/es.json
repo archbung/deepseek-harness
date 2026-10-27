@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Política de investigación",
+    "description": "Una puerta tools/pre-execute que asigna las reglas configuradas a permitir, aprobación o denegar, más una guarda monótona para límites estrictos de llamadas por turno."
+  }
+}

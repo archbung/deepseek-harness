@@ -74,6 +74,7 @@ export const SERVICE_PAGE: Record<string, string> = {
   agents: 'core.md',
   approval: 'approval.md',
   officeToPdf: 'office-to-pdf.md',
+  researchEvidence: 'research.md',
   attachments: 'attachment.md',
   shell: 'shell.md',
   shellEnv: 'shell.md',
@@ -814,6 +815,7 @@ export const LINK_MAP: Readonly<Record<string, string>> = {
   WebSearchProvider: 'web.md',
   WebSearchRequest: 'web.md',
   WebSearchResult: 'web.md',
+  WebSearchSource: 'web.md',
   WorkflowRun: 'workflow.md',
   VerifiedWebhookDelivery: 'webhook.md',
   WebhookRule: 'webhook.md',
@@ -907,6 +909,8 @@ export const FOUNDATION_TYPE_NAMES: ReadonlySet<string> = new Set([
 
 /** Project types deliberately documented outside the subsystems catalog. */
 export const TYPE_LINK_EXEMPTIONS: Readonly<Record<string, string>> = {
+  EvidenceRecord: 'packages/research/research-evidence/README.md',
+  EvidenceId: 'packages/research/research-evidence/README.md',
   ActionCardDecision: 'packages/experimental/action-cards/README.md',
   ActionCardKind: 'packages/experimental/action-cards/README.md',
   ActionCardResult: 'packages/experimental/action-cards/README.md',

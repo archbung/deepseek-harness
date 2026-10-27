@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Recherche-Richtlinie",
+    "description": "Ein tools/pre-execute-Tor, das konfigurierte Regeln auf Erlauben, Genehmigung oder Ablehnen abbildet, plus eine monotone Wächterin für harte Aufrufobergrenzen je Zug."
+  }
+}
